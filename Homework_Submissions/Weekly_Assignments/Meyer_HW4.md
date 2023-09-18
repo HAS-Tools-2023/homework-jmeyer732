@@ -1,6 +1,13 @@
 ## Week 4 Homework
 ### Jessica Meyer
 
+##
+## Grade
+3/3 nice work. 
+- Note no question 2.  THe matrix is a single 2-d array not a matrix composed of multiple arrays. 
+- Exercise 3.1 tripped a lot of people up we'll talk about it more. Short answer is that np.random is a module and has multiple functions as part of it. 
+##
+
 #### Question 1 - Quantitative Analysis and Prediction Explanation
       Since a majority of the southwest is experiencing a drought, I am estimating a week 1 streamflow of 50 cfs and a week 2 streamflow of 40 cfs. This is supported by my calculations because the unprecidented drought we are currently experiencing across the United States is recording all time lows. The streamflow was greater than my guess of 50 cfs during september 100% of the time prior to 2001 and approximately 98.5% of the time after 1999. I really did not understand how to plot different histograms with the new data.
 

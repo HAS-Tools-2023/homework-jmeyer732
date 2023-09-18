@@ -2,6 +2,11 @@ Jessica Meyer
 09.04.2023
 Homework 2: Week 2 Forecast
 
+##
+## Grade
+3/3 nice work
+##
+
 The streamflow values are very low even with the moderate precipitation in northwest Arizona, which I expect to 
 increase values a bit for a few days as the precipitation flows downstream. However, values are still considerably 
 low compared to what is expected based upon the long-term average of the stream gauge. Additionally, the majority 

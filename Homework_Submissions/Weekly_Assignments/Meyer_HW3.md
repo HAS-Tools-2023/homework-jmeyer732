@@ -1,6 +1,11 @@
 ## Week 3 Homework
 ### Jessica Meyer
 
+##
+## Grade
+3/3 nice work. Very good job with the markdown formatting. 
+##
+
 #### Definition List - Question 1
 flow
 : initially recognized as either objects or floats, the rate of water discharge at the gague location within the Verde River in cubic feet per second. Later to be identified as integers so numpy could recognize them and apply the code. Flow was 5 integers for this previous week with no data found for sept 8 or 9.
