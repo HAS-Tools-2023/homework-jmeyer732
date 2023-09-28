@@ -2,20 +2,26 @@
 ### Jessica Meyer
 due Sept 27
 
+## Grade
+3/3 : Great work! Your submission looks good just a few notes. 
+- We can talk about the difference between appending and inserting in class
+- For the start of your assignment where you were looking for flow that meets certain criteria its okay you did for loops (great practice) but note that you don't actually need for loops you can also do it the way its done on line 111
+- I'm sorry that you struggled with the last loop feel free to come to my office hours to discuss. Note that the time the assignment is due was written at the top of the assignment md file. 
+
 **Forecast Explanation:**
-The forecast values for this week and the following week were determined using several methods and my best estimate based on such methods. Initially, I found the number of occurances in which the flow was less than 75 cfs through the period of record (1989 to present - my preference since the new climatological range is from 1990 through 2020) to determine frequency vs our current year. Then I looked at the monthly trend of frequency, i.e. how many of the prior occurrances were within the first ten days of the month, the second ten day block, and then the third ten day block of september. From there I became a bit more specific, using 5cfs ranges, beginning at 75cfs and decreasing until a 'nan' appeared. I printed all of these values and the daily data for the previous week (sept 17 - sept 23) to compare them. 
+The forecast values for this week and the following week were determined using several methods and my best estimate based on such methods. Initially, I found the number of occurrences in which the flow was less than 75 cfs through the period of record (1989 to present - my preference since the new climatological range is from 1990 through 2020) to determine frequency vs our current year. Then I looked at the monthly trend of frequency, i.e. how many of the prior occurrences were within the first ten days of the month, the second ten day block, and then the third ten day block of september. From there I became a bit more specific, using 5cfs ranges, beginning at 75cfs and decreasing until a 'nan' appeared. I printed all of these values and the daily data for the previous week (sept 17 - sept 23) to compare them. 
 
 
-I also made several forloops for flow that was less than 100 or greater than 200:
+I also made several for loops for flow that was less than 100 or greater than 200:
 1. sept 17 through sept 24 after 2010
-1. sept 25 through sept 30 after 2010
-2. oct 1 through oct 7 after 2010
+2. sept 25 through sept 30 after 2010
+3. oct 1 through oct 7 after 2010
    
       *...and used numpy to find the means of several conditional statements from sept 24 through sept 30:*
 
-1. flow was less than 70
-2. flow was less than 60
-3. flow was less than 50
+4. flow was less than 70
+5. flow was less than 60
+6. flow was less than 50
    
       *...lastly, I used numpy to find the mean of this past week from sept 17 through sept 23.*
 
