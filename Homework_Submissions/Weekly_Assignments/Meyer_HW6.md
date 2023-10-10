@@ -2,6 +2,11 @@
 ### Jessica(Jess) Meyer
 ### due October 9
 
+###
+3/3- Great job!
+Note for next time if you have a lto of numbers to report its okay with me if you take a screen shot of the table that VS code produces and just submit that so you don't have to type out all the numbers. 
+###
+
 ### Assignment questions
  In addition to providing a summary of the forecast values you picked and why include the following analysis in your homework submission. 
  Note that questions 3-5 are the same as last weeks questions, however this time you are expected to calculate your answer using the panda's dataframe
