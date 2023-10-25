@@ -1,6 +1,11 @@
 ## Homework 8
 ### Jessica Meyer
 
+### Grade
+2.5/3: Good job. I took of 0.5 because your graphs were missing from your write up. Let me know if you have any questions on how to get images in your markdown and I'm happy to help you do this. 
+
+- I would be happy to help you with this issue if you come to my office hours. Did our discussion of multi-indexes from class last week help at all or was that not really addressing your question. 
+
 #### Written Assignment
 My week 1 forecast is 94.99 cfs and my week 2 forecast is 111.83 cfs.
 
