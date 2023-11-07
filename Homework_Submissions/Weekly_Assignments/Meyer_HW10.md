@@ -2,6 +2,9 @@
 ### Jessica Meyer
 ### due Nov 6
 
+### Grade
+3/3: Nice work. Glad the extra practice helped. We will talk about the final function from the exercises more in class tomorrow and we will also get more function practice in the rest of the semester too. Hopefully it will become more clear as we go!
+
 **Week 10: Python skills review**
 
 *This week we hit pause on new material and are working on exercises to review the skills we have learned so far.* 
