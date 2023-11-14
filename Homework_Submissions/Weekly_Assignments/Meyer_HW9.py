@@ -9,6 +9,7 @@ import pandas as pd
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import numpy as np
+from datetime import date
 pd.set_option('display.max_rows', 500)
 
 
@@ -78,12 +79,29 @@ flow_2023 = pd.DataFrame(
                   ((df.index.year == 2023) & (df.index.month == 10) 
                   & (df.index.day <= 28))])
 
+#LC Here is an example of how look for dates between the start and end date more simply.
+# Also note you don't need to convert it to a dataframe, it already is one 
+
+flow_2023 = df[(df.index >='2023-08-28') & (df.index <='2023-10-28')]
+
+
+## LC I like that you have headers but having multiple headers like this actually makes your comments a bit harder to read  I would just have one line with the --- and then provide more details below it without the ---
+# Also your comments are really short so its hard to follow exactly what you are doing. You are actually getting each of these date ranges out for a range of years. 
 
 # --------------------TWO WEEK FORECASTS USING CLIMATOLOGIES-------------------
 # ---------------------------OCTOBER 29 TO NOVEMBER 4--------------------------
 # --------------------------------------&--------------------------------------
 # ---------------------------NOVEMBER 5 TO NOVEMBER 11-------------------------
 
+#LC see comment above for how to shorten this. 
+# LC -- also since this is something you are doing frequently you could make it a function liek this
+def get_daterange(mydataframe, start_date, end_date):
+        subset_data=df[(mydataframe.index >=start_date) & (mydataframe.index <=end_date)]  
+        return subset_data
+
+
+
+# LC This is a lot ot parse to see what you are doing definitely needs a comment
 clim_week1 = pd.DataFrame(
                         df[((df.index.year >= 1991) & (df.index.year <= 2020) 
                         & (df.index.month == 10) & (df.index.day >= 29) 
@@ -109,6 +127,8 @@ print(clim_week2)
 # -------------------PRINTING STREAMFLOW FORECAST VALUES-----------------------
 #       .flow.mean() : take the 'flow' column values within dataframe and
 #                      calculate the mean
+#LC -- You dont need to define what the functions are in your comments. The reader can see that by looking at the help functions what you need to explain is what you are doing with the functions and why eg:
+# Calculating the 1 week forecast as 60% of the average flow for the preceeding week 1991-2023 
 
 print("1 week forecast:", (clim_week1.flow.mean() * 0.6))
 print("2 week forecast:", (clim_week2.flow.mean() * 0.6))
@@ -116,7 +136,8 @@ print(flow_2023.index)
 
 #%%
 # -----------------------------DEFINING FUNCTIONS------------------------------
-
+# LC Nice functions!
+#LC : each function needs a comment (preferably a doc string) to explain its purpose and what the inputs and outputs are
 def extremes1(clim_week1, month, day):
           vals1 = clim_week1[(clim_week1.index.month == month) 
                              & (clim_week1.index.day == day)]
@@ -130,6 +151,7 @@ def extremes2(clim_week2, month, day):
           extremeflow2max = np.max(vals2['flow'])
           extremeflow2min = np.min(vals2['flow'])
           return(extremeflow2max, extremeflow2min)
+
 
 extremes_week1 = extremes1(clim_week1, month = (10 or 11), 
                            day = (29 or 30 or 31 or 1 or 2 or 3 or 4))
@@ -146,6 +168,7 @@ clim_flow1 = clim_week1['flow'].mean()
 clim_flow2 = clim_week2['flow'].mean()
 recentflow = flow_2023['flow'].mean()
 
+# LC confused about this -- what is the purpose of your functions in tis case? 
 extremes_week1_max = 891.0
 extremes_week1_min = 97.1
 extremes_week2_max = 395
@@ -176,6 +199,8 @@ print(flow_2023.index)
 #   .linewidth : thickness of plotted line
 #     .axhline : plots a horizontal line at the designated variable
 # plt.tight_layout() : makes all plots within the figure tighter or closer
+
+# LC -- NO need to repeat function parameters in your comments. This actually makes your code harder to follow because there is a bunch of documentation that is not really explaining to the reader what your code is doing. 
 
 fig, (ax) = plt.subplots(2, 2, figsize = (15,14), sharex = False)
 plt.suptitle(

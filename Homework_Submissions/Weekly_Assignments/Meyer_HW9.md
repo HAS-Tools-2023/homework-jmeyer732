@@ -2,6 +2,20 @@
 ### Jessica Meyer
 ### due Oct 30
 
+### Grade 8.25/9
+**Code Review**
+- I left comments in your code with some suggestions they all start with #LC 
+Readability: 2.5/3 
+    - I like the way you broke up your code into sections. Your documentation is a bit uneven though. In many cases you are lacking comments to explain what your code is doing and why. 
+    - No need to write comments that document the parameters of functions. THis the reader can find for themselves. 
+    - For every function you need a comment explaining what its doing. 
+    - YOur variable naming conventions were good. 
+Style: 3/3
+    - Generally easy to follow but the big --- lines made the comments a bit hard to read. Its fine to use these to break things up at the top of a code block but I would not have multiple lines in a row this way.
+Code:  2.75/3
+    - Nice work your code ran perfectly for me!
+    - I made some suggestions for how you could streamline things a bit. 
+    - Also it was unclear to me why you had to hardcode the max and min values.
 
 ### Assignment
 #### Forecast Summary
