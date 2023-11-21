@@ -2,6 +2,11 @@
 ### Jessica Meyer
 ### due Nov 20
 
+### Grade
+3/3: Great job nice work getting a different location! Your plots also look beautiful. 
+
+Your questions are also very good and are ones that I think others will have too. We'll review Json and API in class tomorrow. 
+
 **1. A brief summary of how I chose to generate my forecast this week.**
 I chose to generate my forecast by using the climatological 25% quantile and adding 5. This method seems to align within 7-10 cfs of the actual data over the previous few weeks. 
 
