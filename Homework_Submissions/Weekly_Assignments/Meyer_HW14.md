@@ -2,6 +2,9 @@
 ### Jessica Meyer
 ### due Dec 4
 
+### Grade
+3/3: Excellent work this semester. I'm so glad that you found it useful and that you have already found ways to apply this in your other classes. Thanks also for your suggestions for next semester. 
+
 **i. What were your favorite (or most useful) topics we covered?**
 
 My favorite topics that we covered were Xarray and Matplotlib, I have found them extremely useful for all of my courses already. I also really enjoy how easy pandas is to use and how efficient it is. 

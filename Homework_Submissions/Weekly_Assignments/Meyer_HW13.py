@@ -5,13 +5,14 @@ import numpy as np
 pd.set_option('display.max_rows', 500)
 
 #%%
-
+# LC - Nice job getting all this up top!
 # User inputs for streamgage site ID and forecast date
 
 siteID = '09506000'
 forecast_date = '2023-11-26'
 
 # User inputs for different climatological date ranges
+# LC - good commenting but would be nice to tell the user what these date ranges are used for so they know if they should change them or not.
 start_date = '1990-01-01'
 end_date = '2020-12-31'
 
@@ -51,6 +52,9 @@ def get_my_streamflow(siteID, start_date, end_date):
 
 climatology_data = get_my_streamflow(siteID, start_date, end_date)
 
+# LC -- I'm a little confused about whats happening inside this function. If you just want to split the string into year month day you don't need a dataframe you can just do this:
+# month = str.split(start_date, "-")[1]
+# also instead of string splitting you can use the datetime library to convert the string to a datetime object and then pull out the month and day from that object. 
 def input_date(forecast_date):
        '''
        Forecast Date Input
@@ -82,6 +86,7 @@ def input_date(forecast_date):
 
 month, day = input_date(forecast_date)  
 
+# LC - This is good and works but here too you can simplify this a lot of you use dates instead of splitting things up into months and days then you can literally just do date-14 and you don't have to worry about if it crosses a month or not. You can see an example of how to do this in the notes from class (this was an issue a lot of people had so you are not alone :))
 def get_my_1_week_dates(month, day):
        '''
        1 Week Forecast Dates
